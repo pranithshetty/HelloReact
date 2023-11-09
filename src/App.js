@@ -33,23 +33,25 @@ import { Login } from "./Pages/Login";
 import { NewHome } from "./Pages/NewHome";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import PasswordGenerator from "./components/PasswordGenerator";
+
+import PasswordGenerator from "./components/InterviewProbs/PasswordGenerator";
+import Pagination from "./components/InterviewProbs/Pagination";
 function App() {
-	// let guitars = ["a", "b", "c"];
+  // let guitars = ["a", "b", "c"];
 
-	// const [userName, setUserName] = useState("pranith"); //use contecxt
+  // const [userName, setUserName] = useState("pranith"); //use contecxt
 
-	// const client = new QueryClient({
-	//   defaultOptions: {
-	//     queries: {
-	//       refetchOnWindowFocus: true,
-	//     },
-	//   },
-	// }); //configurations for use react query
+  // const client = new QueryClient({
+  //   defaultOptions: {
+  //     queries: {
+  //       refetchOnWindowFocus: true,
+  //     },
+  //   },
+  // }); //configurations for use react query
 
-	return (
-		<div className="App">
-			{/* <Greet name ="name1" lName="soup"/>
+  return (
+    <div className="App">
+      {/* <Greet name ="name1" lName="soup"/>
       <Greet name ="name2" lName="soup2">
         <p>clidren props</p>
       </Greet>
@@ -57,18 +59,18 @@ function App() {
       <Message/>
       <ParentComponent/>
       <Form/> */}
-			{/* <PostList />
+      {/* <PostList />
       <PostForm /> */}
-			{/* <UseTransition /> */}
-			{/* <CounterClass startAt={0} countBy={1} /> */}
-			{/* <AddItem />
+      {/* <UseTransition /> */}
+      {/* <CounterClass startAt={0} countBy={1} /> */}
+      {/* <AddItem />
       <ListClass title="Guitars" items={guitars} /> */}
-			{/* <Planets planets={planets} /> */}
-			{/* <ToDoList /> */}
-			{/* <CatFact /> */}
-			{/* <PredictAge /> */}
-			{/* Router/State(ContextAPI)/react Query example */}
-			{/* <QueryClientProvider client={client}>
+      {/* <Planets planets={planets} /> */}
+      {/* <ToDoList /> */}
+      {/* <CatFact /> */}
+      {/* <PredictAge /> */}
+      {/* Router/State(ContextAPI)/react Query example */}
+      {/* <QueryClientProvider client={client}>
         <AppContext.Provider value={{ userName, setUserName }}>
           <Router>
             <div>
@@ -86,16 +88,16 @@ function App() {
         </AppContext.Provider>
       </QueryClientProvider> */}
 
-			{/* react-hook-form with yup validation */}
-			{/* <PedroForm />  */}
+      {/* react-hook-form with yup validation */}
+      {/* <PedroForm />  */}
 
-			{/* custom hook */}
-			{/* <QueryClientProvider client={client}>
+      {/* custom hook */}
+      {/* <QueryClientProvider client={client}>
         <CatFactCustHook />
       </QueryClientProvider> */}
 
-			{/* redux-toolkit demo */}
-			{/* <Provider store={store}>
+      {/* redux-toolkit demo */}
+      {/* <Provider store={store}>
         <Router>
           <div>
             <Link to="">Home</Link>
@@ -110,9 +112,12 @@ function App() {
           </Routes>
         </Router>
       </Provider> */}
-			<PasswordGenerator />
-		</div>
-	);
+
+      {/* <PasswordGenerator /> */}
+
+      <Pagination />
+    </div>
+  );
 }
 
 export default App;
